@@ -13,6 +13,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.ResourceBundle;
+import java.util.UUID;
 
 import javax.el.ExpressionFactory;
 import javax.el.MethodExpression;
@@ -277,8 +278,9 @@ public class PivotComponentBuilder extends
     @Override
     public void startCell(TableRenderContext context) {
         this.column = new Column();
-
-        String id = "col-" + column.hashCode();
+        UUID uuid = UUID.randomUUID();
+       // String id = "col-" + column.hashCode(); se prodice error por duplicados 
+        String id = "col-" + uuid.toString();
 
         column.setId(id);
         column.setColspan(context.getColumnSpan());
@@ -530,8 +532,10 @@ public class PivotComponentBuilder extends
             column.getChildren().add(inplace);
         } else {
             HtmlOutputText text = new HtmlOutputText();
-            String id = "txt-" + text.hashCode();
-
+            UUID uuid = UUID.randomUUID();
+        
+           // String id = "txt-" + text.hashCode(); falla se duplican identificadores
+            String id = "txt-" + uuid.toString();
             text.setId(id);
             text.setValue(labelText);
 
