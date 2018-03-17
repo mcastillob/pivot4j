@@ -289,6 +289,15 @@
 			<artifactId>freemarker</artifactId>
 			<version>${version.freemarker}</version>
 		</dependency>
+		
+		<dependency>
+         <groupId>xalan</groupId>
+         <artifactId>xalan</artifactId>
+         <version>${version.xalan}</version>
+      </dependency>
+		
+		
+		
 	</dependencies>
 
 	<pluginRepositories>
