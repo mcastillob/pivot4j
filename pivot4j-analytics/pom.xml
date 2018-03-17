@@ -525,7 +525,7 @@
 		</profile>
 
 		<profile>
-			<id>tomcat6</id>
+			<id>tomcat8</id>
 			<activation>
 				<activeByDefault>true</activeByDefault>
 				<property>
@@ -536,26 +536,26 @@
 			<dependencies>
 				<dependency>
 					<groupId>org.jboss.arquillian.container</groupId>
-					<artifactId>arquillian-tomcat-embedded-6</artifactId>
-					<version>${version.arquillian.tomcat6}</version>
+					<artifactId>arquillian-tomcat-embedded-8</artifactId>
+					<version>${version.arquillian.tomcat8}</version>				
 					<scope>test</scope>
 				</dependency>
 				<dependency>
 					<groupId>org.apache.tomcat</groupId>
-					<artifactId>catalina</artifactId>
-					<version>${version.tomcat6}</version>
+					<artifactId>tomcat-catalina</artifactId>
+					<version>${version.tomcat8}</version>
 					<scope>test</scope>
 				</dependency>
 				<dependency>
 					<groupId>org.apache.tomcat</groupId>
-					<artifactId>coyote</artifactId>
-					<version>${version.tomcat6}</version>
+					<artifactId>tomcat-coyote</artifactId>
+					<version>${version.tomcat8}</version>
 					<scope>provided</scope>
 				</dependency>
 				<dependency>
 					<groupId>org.apache.tomcat</groupId>
-					<artifactId>jasper</artifactId>
-					<version>${version.tomcat6}</version>
+					<artifactId>tomcat-jasper</artifactId>
+					<version>${version.tomcat8}</version>
 					<scope>provided</scope>
 				</dependency>
 			</dependencies>
