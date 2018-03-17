@@ -52,7 +52,7 @@ It aims to leverage mature but now discontinued JPivot project's codebase to mak
 		<version.plugin.javancss>2.1</version.plugin.javancss>
 		<version.plugin.jetspeed>2.2.2</version.plugin.jetspeed>
 		<version.plugin.jxr>2.4</version.plugin.jxr>
-		<version.plugin.l10n>1.0-alpha-2</version.plugin.l10n>
+		<version.plugin.l10n>3.5.3</version.plugin.l10n>
 		<version.plugin.site>3.3</version.plugin.site>
 		<version.plugin.project.info>2.7</version.plugin.project.info>
 		<version.plugin.resources>2.6</version.plugin.resources>
@@ -98,11 +98,11 @@ It aims to leverage mature but now discontinued JPivot project's codebase to mak
 		<version.primefaces.extensions>4.0.0</version.primefaces.extensions>
 		<version.primefaces.themes>1.0.10</version.primefaces.themes>
 
-		<version.arquillian.bom>1.1.5.Final</version.arquillian.bom>
-		<version.arquillian.drone>2.0.0.Alpha2</version.arquillian.drone>
-		<version.arquillian.graphene>2.1.0.Alpha1</version.arquillian.graphene>
-		<version.arquillian.jacoco>1.0.0.Alpha6</version.arquillian.jacoco>
-		<version.arquillian.tomcat6>1.0.0.CR7</version.arquillian.tomcat6>
+		<version.arquillian.bom>1.4.0.Final</version.arquillian.bom>
+		<version.arquillian.drone>2.5.0</version.arquillian.drone>
+		<version.arquillian.graphene>2.3.2</version.arquillian.graphene>
+		<version.arquillian.jacoco>1.0.0.Alpha9</version.arquillian.jacoco>
+		<version.arquillian.tomcat8>1.0.1.Final</version.arquillian.tomcat8>
 
 		<version.derby>10.10.2.0</version.derby>
 		<version.doxia.markdown>1.5</version.doxia.markdown>
@@ -113,7 +113,7 @@ It aims to leverage mature but now discontinued JPivot project's codebase to mak
 		<version.jflex>1.4.3</version.jflex>
 		<version.poi>3.10-FINAL</version.poi>
 		<version.shrinkwrap>2.0.0</version.shrinkwrap>
-		<version.tomcat6>6.0.41</version.tomcat6>
+		<version.tomcat8>8.5.29</version.tomcat8>
 		<version.xerces>2.11.0</version.xerces>
 		<version.reflow.velocity>1.1.1</version.reflow.velocity>
 		<version.velocity>1.7</version.velocity>
@@ -470,7 +470,7 @@ It aims to leverage mature but now discontinued JPivot project's codebase to mak
 			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>l10n-maven-plugin</artifactId>
+				<artifactId>maven-plugin-api</artifactId>
 				<version>${version.plugin.l10n}</version>
 				<configuration>
 					<locales>
