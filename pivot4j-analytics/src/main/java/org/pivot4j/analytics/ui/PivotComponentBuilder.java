@@ -53,6 +53,8 @@ import org.primefaces.component.row.Row;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.fasterxml.uuid.Generators;
+
 public class PivotComponentBuilder extends
         AbstractRenderCallback<TableRenderContext> implements
         TableRenderCallback {
@@ -278,8 +280,9 @@ public class PivotComponentBuilder extends
     @Override
     public void startCell(TableRenderContext context) {
         this.column = new Column();
-        UUID uuid = UUID.randomUUID();
-       // String id = "col-" + column.hashCode(); se prodice error por duplicados 
+        
+        UUID uuid  = Generators.timeBasedGenerator().generate();
+        
         String id = "col-" + uuid.toString();
 
         column.setId(id);
@@ -532,9 +535,9 @@ public class PivotComponentBuilder extends
             column.getChildren().add(inplace);
         } else {
             HtmlOutputText text = new HtmlOutputText();
-            UUID uuid = UUID.randomUUID();
-        
-           // String id = "txt-" + text.hashCode(); falla se duplican identificadores
+                         
+            UUID uuid = Generators.timeBasedGenerator().generate();
+                        
             String id = "txt-" + uuid.toString();
             text.setId(id);
             text.setValue(labelText);

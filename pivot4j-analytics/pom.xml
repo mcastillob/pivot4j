@@ -444,6 +444,14 @@
 			<scope>test</scope>
 			<version>${version.jacoco}</version>
 		</dependency>
+				
+		<dependency>
+		    <groupId>com.fasterxml.uuid</groupId>
+		    <artifactId>java-uuid-generator</artifactId>
+		    <version>${version.java.uuid.generator}</version>
+		</dependency>
+		
+						
 	</dependencies>
 
 	<dependencyManagement>

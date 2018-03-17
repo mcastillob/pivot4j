@@ -60,6 +60,9 @@ It aims to leverage mature but now discontinued JPivot project's codebase to mak
 		<version.plugin.source>2.2.1</version.plugin.source>
 		<version.plugin.war>2.4</version.plugin.war>
 		<version.plugin.xml>1.0</version.plugin.xml>
+	    <version.java.uuid.generator>3.1.5</version.java.uuid.generator>
+		
+		
 
 		<version.extension.scm>1.9</version.extension.scm>
 		<version.extension.wagon>2.6</version.extension.wagon>
