@@ -14,7 +14,7 @@
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>com.github.vbmacher</groupId>
+				<groupId>edu.tum.cs</groupId>
 				<artifactId>cup-maven-plugin</artifactId>
 				<version>${version.plugin.cup}</version>
 				<executions>
