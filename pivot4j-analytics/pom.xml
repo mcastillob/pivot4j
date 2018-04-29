@@ -303,7 +303,7 @@
 		</dependency>
 		<dependency>
 			<groupId>org.primefaces.extensions</groupId>
-			<artifactId>resources-codemirror</artifactId>
+			<artifactId>primefaces-extensions</artifactId>
 			<version>${version.primefaces.extensions}</version>
 		</dependency>
 		<dependency>
@@ -487,6 +487,16 @@
 			<url>http://repository.primefaces.org</url>
 			<layout>default</layout>
 		</repository>
+		
+		<repository>
+			<id>prime-ext</id>
+			<name>primefaces extensions Maven Repository</name>
+			<url>https://mvnrepository.com/artifact/org.primefaces.extensions/primefaces-extensions</url>
+			
+		</repository>
+		
+		
+		
 	</repositories>
 
 	<profiles>
