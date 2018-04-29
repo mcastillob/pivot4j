@@ -72,7 +72,7 @@ It aims to leverage mature but now discontinued JPivot project's codebase to mak
 		<version.jstl>1.2</version.jstl>
 		<version.servlet>2.5</version.servlet>
 		<version.myfaces>2.2.12</version.myfaces>
-		<version.mojarra>2.2.5</version.mojarra>
+		<version.mojarra>2.3.2</version.mojarra>
 
 		<version.slf4j>1.7.7</version.slf4j>
 		<version.log4j>2.0.2</version.log4j>
@@ -438,6 +438,7 @@ It aims to leverage mature but now discontinued JPivot project's codebase to mak
 				<artifactId>maven-javadoc-plugin</artifactId>
 				<version>${version.plugin.javadoc}</version>
 				<configuration>
+				<doclint>none</doclint>
 					<links>
 						<link>http://docs.oracle.com/javase/7/docs/api/*</link>
 						<link>http://tomcat.apache.org/tomcat-7.0-doc/servletapi/*</link>
@@ -534,7 +535,11 @@ It aims to leverage mature but now discontinued JPivot project's codebase to mak
 			<version>${version.htmlunit}</version>
 			<scope>test</scope>
 		</dependency>
-		
+		<dependency>
+		    <groupId>javax.inject</groupId>
+		    <artifactId>javax.inject</artifactId>
+    	<version>1</version>
+</dependency>
 	
 	</dependencies>
 
