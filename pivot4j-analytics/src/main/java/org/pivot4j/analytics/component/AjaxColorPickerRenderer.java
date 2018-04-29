@@ -46,9 +46,10 @@ public class AjaxColorPickerRenderer extends ColorPickerRenderer {
 
 		WidgetBuilder wb = getWidgetBuilder(context);
 
-		wb.init("AjaxColorPicker", colorPicker.resolveWidgetVar(), clientId,
-				"colorpicker").attr("mode", colorPicker.getMode())
-				.attr("color", value, null);
+		wb.initWithComponentLoad("AjaxColorPicker", colorPicker.resolveWidgetVar(), clientId,
+	                "colorpicker").attr("mode", colorPicker.getMode())
+	                .attr("color", value, null);
+
 
 		encodeClientBehaviors(context, (ClientBehaviorHolder) colorPicker);
 

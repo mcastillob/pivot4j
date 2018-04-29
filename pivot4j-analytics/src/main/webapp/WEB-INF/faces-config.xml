@@ -4,10 +4,10 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_0.xsd">
 	<application>
 		<resource-bundle>
-			<base-name>org.pivot4j.analytics.i18n.messages</base-name>
+			<base-name>org.pivot4j.i18n.messages</base-name>
 			<var>msg</var>
 		</resource-bundle>
-		<message-bundle>org.pivot4j.analytics.i18n.messages</message-bundle>
+		<message-bundle>org.pivot4j.i18n.messages</message-bundle>
 		<locale-config>
 			<default-locale>en</default-locale>
 			<supported-locale>en</supported-locale>
@@ -16,6 +16,7 @@
 			<supported-locale>pt_BR</supported-locale>
 			<supported-locale>fr</supported-locale>
 			<supported-locale>de</supported-locale>
+			<supported-locale>es_CL</supported-locale>
 			<supported-locale>es</supported-locale>
 			<supported-locale>es_MX</supported-locale>
 			<supported-locale>hi</supported-locale>

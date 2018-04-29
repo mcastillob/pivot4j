@@ -8,7 +8,7 @@
 
 	<groupId>org.pivot4j</groupId>
 	<artifactId>pivot4j</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.1-SNAPSHOT</version>
 	<name>Pivot4J</name>
 	<description>Pivot4J provides a common API for OLAP servers which can be used to build an analytical service frontend with pivot style GUI.
 
@@ -72,7 +72,7 @@ It aims to leverage mature but now discontinued JPivot project's codebase to mak
 		<version.jstl>1.2</version.jstl>
 		<version.servlet>2.5</version.servlet>
 		<version.myfaces>2.2.12</version.myfaces>
-		<version.mojarra>2.2.5</version.mojarra>
+		<version.mojarra>2.3.2</version.mojarra>
 
 		<version.slf4j>1.7.7</version.slf4j>
 		<version.log4j>2.0.2</version.log4j>
@@ -94,8 +94,8 @@ It aims to leverage mature but now discontinued JPivot project's codebase to mak
 		<version.jacoco>0.7.1.201405082137</version.jacoco>
 		<version.junit>4.11</version.junit>
 
-		<version.primefaces>5.3</version.primefaces>
-		<version.primefaces.extensions>4.0.0</version.primefaces.extensions>
+		<version.primefaces>6.2</version.primefaces>
+		<version.primefaces.extensions>6.2.4</version.primefaces.extensions>
 		<version.primefaces.themes>1.0.10</version.primefaces.themes>
 
 		<version.arquillian.bom>1.4.0.Final</version.arquillian.bom>
@@ -438,6 +438,7 @@ It aims to leverage mature but now discontinued JPivot project's codebase to mak
 				<artifactId>maven-javadoc-plugin</artifactId>
 				<version>${version.plugin.javadoc}</version>
 				<configuration>
+				<doclint>none</doclint>
 					<links>
 						<link>http://docs.oracle.com/javase/7/docs/api/*</link>
 						<link>http://tomcat.apache.org/tomcat-7.0-doc/servletapi/*</link>
@@ -534,7 +535,11 @@ It aims to leverage mature but now discontinued JPivot project's codebase to mak
 			<version>${version.htmlunit}</version>
 			<scope>test</scope>
 		</dependency>
-		
+		<dependency>
+		    <groupId>javax.inject</groupId>
+		    <artifactId>javax.inject</artifactId>
+    	<version>1</version>
+</dependency>
 	
 	</dependencies>
 
