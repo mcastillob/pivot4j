@@ -531,13 +531,14 @@ public class NavigatorHandler implements ModelChangeListener, NodeFilter {
 				ResourceBundle bundle = context.getApplication()
 						.getResourceBundle(context, "msg");
 
-				String title = bundle.getString("warn.hierarchy.exists.title");
-				String message = String.format(
-						bundle.getString("warn.hierarchy.exists.message"),
-						ax.name());
+				String title    = bundle.getString("warn.hierarchy.exists.title");
+				String message  = bundle.getString("warn.hierarchy.exists.message");
+				String axisName = bundle.getString(ax.name());
+				
+				String completeMessage = String.format(message,axisName);
 
 				context.addMessage(null, new FacesMessage(
-						FacesMessage.SEVERITY_WARN, title, message));
+						FacesMessage.SEVERITY_WARN, title, completeMessage));
 				return;
 			}
 		}
