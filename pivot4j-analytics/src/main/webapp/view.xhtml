@@ -324,9 +324,8 @@
 						value="#{navigatorHandler.targetNode}" dynamic="true" cache="true"
 						var="node" animate="true"
 						rendered="#{viewHandler.lastError == null}">
-						<p:treeNode type="columns" icon="ui-icon-cols">
-							<h:outputText id="columns-node" value="#{msg['label.columns']}"
-								styleClass="node-axis" />
+						<p:treeNode type="columns">							                                                        
+                                                        <p:outputLabel styleClass="ui-icon-cols node-axis" id="columns-node" value="#{msg['label.columns']}"/>                                                        
 							<p:droppable for="columns-node"
 								hoverStyleClass="ui-widget-header" tolerance="pointer">
 								<p:ajax listener="#{navigatorHandler.onDropOnAxis}"
@@ -335,19 +334,17 @@
 							</p:droppable>
 						</p:treeNode>
 
-						<p:treeNode type="rows" icon="ui-icon-rows">
-							<h:outputText id="rows-node" value="#{msg['label.rows']}"
-								styleClass="node-axis" />
-							<p:droppable for="rows-node" hoverStyleClass="ui-widget-header"
-								tolerance="pointer">
+						<p:treeNode type="rows">                                                   
+                                                        <p:outputLabel styleClass="ui-icon-rows node-axis" id="rows-node" value="#{msg['label.rows']}"/>
+							
+							<p:droppable for="rows-node" hoverStyleClass="ui-widget-header" tolerance="pointer">
 								<p:ajax listener="#{navigatorHandler.onDropOnAxis}"
 									update=":source-tree-form,:target-tree-form,:toolbar-form,:grid-form,:editor-form:mdx-editor,:editor-form:editor-toolbar"
 									oncomplete="onViewChanged()" />
 							</p:droppable>
 						</p:treeNode>
 
-						<p:treeNode type="hierarchy" icon="ui-icon-hier"
-							tolerance="pointer">
+						<p:treeNode type="hierarchy" icon="ui-icon-hier">
 							<h:outputText id="hierarchy-node" value="#{node.caption}"
 								styleClass="node-hierarchy" />
 							<p:commandButton icon="ui-button-icon-only ui-icon-search"
@@ -551,7 +548,7 @@
 							completeMethod="#{autoCompletionSupport.complete}"
 							extraKeys="{ 'Ctrl-Space': function(cm) { completeMdx(PF('mdxEditor')); }}"
 							required="true" label="#{msg['label.mdx']}"
-							readOnly="#{pivotStateManager.readOnly}" />
+                                                        readonly="#{pivotStateManager.readOnly}" />
 					</pe:layoutPane>
 
 					<p:growl id="editor-growl" showDetail="true" sticky="true" />
