@@ -94,7 +94,7 @@ It aims to leverage mature but now discontinued JPivot project's codebase to mak
 		<version.jacoco>0.7.1.201405082137</version.jacoco>
 		<version.junit>4.11</version.junit>
 
-		<version.primefaces>6.2</version.primefaces>
+		<version.primefaces>6.2.4</version.primefaces>
 		<version.primefaces.extensions>6.2.4</version.primefaces.extensions>
 		<version.primefaces.themes>1.0.10</version.primefaces.themes>
 
