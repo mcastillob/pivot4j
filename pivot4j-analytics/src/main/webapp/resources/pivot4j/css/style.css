@@ -118,7 +118,7 @@ body.report .pe-layout-pane-header {
 }
 
 #toolbar-form .ui-icon-info {
-	background-image: url('#{resource['pivot4j:images/logo16.png']}');
+	background-image: url("#{resource['pivot4j:images/logo16.png']}");
 	background-position: 0 center;
 	border-radius: 0 0 0 0;
 }
@@ -128,77 +128,77 @@ body.report .pe-layout-pane-header {
 }
 
 .ui-treenode-icon.ui-icon-dim {
-	background-image: url('#{resource['pivot4j:images/dimension.gif']}');
+	background-image: url("#{resource['pivot4j:images/dimension.gif']}");
 	background-position: 0 0;
 }
 
 .ui-treenode-icon.ui-icon-hier {
-	background-image: url('#{resource['pivot4j:images/hierarchy.gif']}');
+	background-image: url("#{resource['pivot4j:images/hierarchy.gif']}");
 	background-position: 0 0;
 }
 
 .ui-treenode-icon.ui-icon-level0 {
-	background-image: url('#{resource['pivot4j:images/level_0.gif']}');
+	background-image: url("#{resource['pivot4j:images/level_0.gif']}");
 	background-position: 0 0;
 }
 
 .ui-treenode-icon.ui-icon-level1 {
-	background-image: url('#{resource['pivot4j:images/level_1.gif']}');
+	background-image: url("#{resource['pivot4j:images/level_1.gif']}");
 	background-position: 0 0;
 }
 
 .ui-treenode-icon.ui-icon-level2 {
-	background-image: url('#{resource['pivot4j:images/level_2.gif']}');
+	background-image: url("#{resource['pivot4j:images/level_2.gif']}");
 	background-position: 0 0;
 }
 
 .ui-treenode-icon.ui-icon-level3 {
-	background-image: url('#{resource['pivot4j:images/level_3.gif']}');
+	background-image: url("#{resource['pivot4j:images/level_3.gif']}");
 	background-position: 0 0;
 }
 
 .ui-treenode-icon.ui-icon-level4 {
-	background-image: url('#{resource['pivot4j:images/level_4.gif']}');
+	background-image: url("#{resource['pivot4j:images/level_4.gif']}");
 	background-position: 0 0;
 }
 
 .ui-treenode-icon.ui-icon-level5 {
-	background-image: url('#{resource['pivot4j:images/level_5.gif']}');
+	background-image: url("#{resource['pivot4j:images/level_5.gif']}");
 	background-position: 0 0;
 }
 
 .ui-treenode-icon.ui-icon-level6 {
-	background-image: url('#{resource['pivot4j:images/level_6.gif']}');
+	background-image: url("#{resource['pivot4j:images/level_6.gif']}");
 	background-position: 0 0;
 }
 
 .ui-treenode-icon.ui-icon-level7 {
-	background-image: url('#{resource['pivot4j:images/level_7.gif']}');
+	background-image: url("#{resource['pivot4j:images/level_7.gif']}");
 	background-position: 0 0;
 }
 
 .ui-treenode-icon.ui-icon-level8 {
-	background-image: url('#{resource['pivot4j:images/level_8.gif']}');
+	background-image: url("#{resource['pivot4j:images/level_8.gif']}");
 	background-position: 0 0;
 }
 
 .ui-treenode-icon.ui-icon-member {
-	background-image: url('#{resource['pivot4j:images/member.gif']}');
+	background-image: url("#{resource['pivot4j:images/member.gif']}");
 	background-position: 0 0;
 }
 
 .ui-treenode-icon.ui-icon-measure {
-	background-image: url('#{resource['pivot4j:images/measure.gif']}');
+	background-image: url("#{resource['pivot4j:images/measure.gif']}");
 	background-position: 0 0;
 }
 
 .ui-treenode-icon.ui-icon-cols,.ui-widget-header .ui-icon-cols {
-	background-image: url('#{resource['pivot4j:images/columns.gif']}');
+	background-image: url("#{resource['pivot4j:images/columns.gif']}");
 	background-position: 0 0;
 }
 
 .ui-treenode-icon.ui-icon-rows,.ui-widget-header .ui-icon-rows {
-	background-image: url('#{resource['pivot4j:images/rows.gif']}');
+	background-image: url("#{resource['pivot4j:images/rows.gif']}");
 	background-position: 0 0;
 }
 
@@ -227,7 +227,7 @@ body.report .pe-layout-pane-header {
 }
 
 .ui-draggable-dragging.node-hierarchy {
-	background-image: url('#{resource['pivot4j:images/hierarchy.gif']}');
+	background-image: url("#{resource['pivot4j:images/hierarchy.gif']}");
 	background-repeat: no-repeat;
 	background-position: left;
 	padding-left: 18px;
@@ -240,7 +240,7 @@ body.report .pe-layout-pane-header {
 }
 
 .ui-draggable-dragging.node-member {
-	background-image: url('#{resource['pivot4j:images/measure.gif']}');
+	background-image: url("#{resource['pivot4j:images/measure.gif']}");
 	background-repeat: no-repeat;
 	background-position: left;
 	padding-left: 18px;
@@ -642,11 +642,11 @@ label.ui-icon-cols,label.ui-icon-rows {
 }
 
 label.ui-icon-cols {
-	background-image: url('#{resource['pivot4j:images/columns.gif']}');
+	background-image: url("#{resource['pivot4j:images/columns.gif']}");
 }
 
 label.ui-icon-rows {
-	background-image: url('#{resource['pivot4j:images/rows.gif']}');
+	background-image: url("#{resource['pivot4j:images/rows.gif']}");
 }
 
 td.field-name,th.field-name {
@@ -683,9 +683,9 @@ div.ui-tabs-panel iframe {
 	border: none;
 }
 
-body.ie-compat div.ui-tabs-panel iframe {
+/*body.ie-compat div.ui-tabs-panel iframe {
 	height: expression(this.parentNode.offsetHeight);
-}
+}*/
 
 body.ie-compat .ui-toolbar .ui-button {
 	float: left;
